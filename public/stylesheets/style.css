@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a.link {
+    pointer-events: none; /*이벤트를 막음*/
+    cursor: default; /*마우스 커서를 포인트에서 디폴트로 변경*/
+    }
+
+#intro{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    background-color: #a8c8fd;
+    width:100%;
+    height:100%;
+    z-index: 10;
+}
+.map_guide{
+    position:absolute; 
+    top:6%;
+    left:5%;
+    z-index:20;
+}
+.map_title{
+    font-family: 'KOTRA_BOLD-Bold';
+    font-size: 4.5rem;
+    color:white;
+
+}
+.map_choice{
+    font-family: 'KOTRA_BOLD-Bold';
+    font-size: 1.5rem;
+    color:#2D884D;
+    z-index:20;
+    margin-top:-2.5rem;
+    margin-left:4rem;
+}
+svg path{
+    /* fill: #4462a1; */
+    opacity:0.8;
+    stroke:#FFF;
+    stroke-width:1px;
+    transition:fill 0.3;
+    stroke:white;
+    stroke-width:8px;
+}
+svg path:hover{
+    fill: #2D884D;
+    stroke:#FFF;
+    stroke-width:1px;
+    transition:fill 0.3;
+}
+
+.circle_pulse{
+    width:20px;
+    height:20px;
+}
+/* #map div[title="myPosition"] img{
+    border:10px solid white;
+    width:20px;
+    height:20px;
+} */
+
+.change1{
+    transform: translateY(-15%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.change2{
+    transform: translateY(15%);
+    opacity: 0;
+    transition: all 1s;
+}
+.change_intro{
+    opacity: 0;
+    transition: all 3s;
+
+}
+
+#map {
+    height:100%;
+}
+
