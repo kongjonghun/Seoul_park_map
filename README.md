@@ -1,2 +1,2 @@
 # Seoulparkmap
-서버실행 nodemon ./bin/www
+Node.js를 이용한 서울 공원 지도 웹
